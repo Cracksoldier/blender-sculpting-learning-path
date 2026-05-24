@@ -39,7 +39,7 @@ const CURRICULUM = [
           {
             id: 'l1-sm-1',
             title: 'Entering Sculpt Mode and mesh resolution basics',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/introduction.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/index.html',
             resourceLabel: 'Blender Docs'
           },
           {
@@ -51,7 +51,7 @@ const CURRICULUM = [
           {
             id: 'l1-sm-3',
             title: 'Setting up X-axis symmetry for faces and organic forms',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/symmetry.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/symmetry.html',
             resourceLabel: 'Blender Docs'
           }
         ]
@@ -63,25 +63,25 @@ const CURRICULUM = [
           {
             id: 'l1-br-1',
             title: 'Draw and Draw Sharp: building and cutting form',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/draw.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/draw.html',
             resourceLabel: 'Blender Docs'
           },
           {
             id: 'l1-br-2',
             title: 'Clay and Clay Strips: blocking primary volumes',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/clay.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/clay.html',
             resourceLabel: 'Blender Docs'
           },
           {
             id: 'l1-br-3',
             title: 'Smooth (Shift): surface refinement and blending',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/smooth.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/smooth.html',
             resourceLabel: 'Blender Docs'
           },
           {
             id: 'l1-br-4',
             title: 'Grab and Elastic Deform: posing and large-scale shaping',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/grab.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/grab.html',
             resourceLabel: 'Blender Docs'
           },
           {
@@ -111,7 +111,7 @@ const CURRICULUM = [
           {
             id: 'l1-pr-3',
             title: 'Undo/Redo, sculpt history, and saving incremental files',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/advanced/undo_redo.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/interface/undo_redo.html',
             resourceLabel: 'Blender Docs'
           },
           {
@@ -198,7 +198,7 @@ const CURRICULUM = [
           {
             id: 'l2-mr-3',
             title: 'Applying, deleting, and baking Multires displacement data',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/multiresolution.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/multires.html',
             resourceLabel: 'Blender Docs'
           }
         ]
@@ -210,7 +210,7 @@ const CURRICULUM = [
           {
             id: 'l2-mk-1',
             title: 'Mask brush, Box Mask, and Lasso Mask for selective sculpting',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/mask.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/mask.html',
             resourceLabel: 'Blender Docs'
           },
           {
@@ -381,7 +381,7 @@ const CURRICULUM = [
           {
             id: 'l3-cl-2',
             title: 'Sculpting cloth using Crease, Smooth, Flatten, and Cloth brush',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/cloth.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/cloth.html',
             resourceLabel: 'Blender Docs'
           },
           {
@@ -462,7 +462,7 @@ const CURRICULUM = [
           {
             id: 'l4-pi-4',
             title: 'Pose brush: live posing without destroying sculpted surface detail',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/pose.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/pose.html',
             resourceLabel: 'Blender Docs'
           }
         ]
@@ -633,7 +633,7 @@ const CURRICULUM = [
           {
             id: 'l5-en-1',
             title: 'Large-scale terrain and landscape sculpting with Voxel Remesh',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/introduction.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/index.html',
             resourceLabel: 'Blender Docs'
           },
           {
@@ -657,7 +657,7 @@ const CURRICULUM = [
           {
             id: 'l5-pt-1',
             title: 'Wall thickness, hollow vs solid, and material requirements for FDM and resin',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/addons/mesh/3d_print_toolbox.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/addons/mesh/3d_print_toolbox/index.html',
             resourceLabel: 'Blender Docs'
           },
           {
@@ -669,7 +669,7 @@ const CURRICULUM = [
           {
             id: 'l5-pt-3',
             title: 'Mesh repair: non-manifold edges and flipped normals with the 3D Print Toolbox',
-            resourceUrl: 'https://docs.blender.org/manual/en/latest/addons/mesh/3d_print_toolbox.html',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/addons/mesh/3d_print_toolbox/index.html',
             resourceLabel: 'Blender Docs'
           }
         ]
