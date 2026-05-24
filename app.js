@@ -83,6 +83,12 @@ const CURRICULUM = [
             title: 'Grab and Elastic Deform: posing and large-scale shaping',
             resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/grab.html',
             resourceLabel: 'Blender Docs'
+          },
+          {
+            id: 'l1-br-5',
+            title: 'Trim Boundary and Fill/Deepen: cutting silhouettes and filling dents',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/index.html',
+            resourceLabel: 'Blender Docs'
           }
         ]
       },
@@ -106,6 +112,30 @@ const CURRICULUM = [
             id: 'l1-pr-3',
             title: 'Undo/Redo, sculpt history, and saving incremental files',
             resourceUrl: 'https://docs.blender.org/manual/en/latest/advanced/undo_redo.html',
+            resourceLabel: 'Blender Docs'
+          },
+          {
+            id: 'l1-pr-4',
+            title: 'Setting up a critique scene: mirror plane, neutral grey background',
+            resourceUrl: 'https://www.youtube.com/@YanSculpts',
+            resourceLabel: 'YanSculpts'
+          }
+        ]
+      },
+      {
+        id: 'l1-matcap',
+        title: 'Matcap & Viewport Display',
+        topics: [
+          {
+            id: 'l1-mc-1',
+            title: 'Matcap presets: choosing the right cap to reveal form and lighting',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html',
+            resourceLabel: 'Blender Docs'
+          },
+          {
+            id: 'l1-mc-2',
+            title: 'X-ray mode, wireframe overlay, and face orientation for diagnosing meshes',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html',
             resourceLabel: 'Blender Docs'
           }
         ]
@@ -140,6 +170,12 @@ const CURRICULUM = [
             title: 'Dyntopo limitations: artifacts, rendering, and performance',
             resourceUrl: 'https://www.youtube.com/@ZachariasReinhardt',
             resourceLabel: 'Zacharias Reinhardt'
+          },
+          {
+            id: 'l2-dy-4',
+            title: 'Flood Fill and Collapse Short Edges for Dyntopo mesh cleanup',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/dyntopo.html',
+            resourceLabel: 'Blender Docs'
           }
         ]
       },
@@ -188,6 +224,12 @@ const CURRICULUM = [
             title: 'Face Sets: painting, visibility toggle, and sculpt isolation',
             resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/editing/face_sets.html',
             resourceLabel: 'Blender Docs'
+          },
+          {
+            id: 'l2-mk-4',
+            title: 'Expand Mask by Topology (Shift+Alt+A) and Mask by Curvature',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/editing/mask.html',
+            resourceLabel: 'Blender Docs'
           }
         ]
       },
@@ -212,6 +254,30 @@ const CURRICULUM = [
             title: 'Conveying volume, weight, and the effect of gravity',
             resourceUrl: 'https://www.youtube.com/@YanSculpts',
             resourceLabel: 'YanSculpts'
+          }
+        ]
+      },
+      {
+        id: 'l2-alphas',
+        title: 'Brush Alphas & Stroke Methods',
+        topics: [
+          {
+            id: 'l2-al-1',
+            title: 'Brush textures and alphas: loading and using custom stamps',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/brush/texture.html',
+            resourceLabel: 'Blender Docs'
+          },
+          {
+            id: 'l2-al-2',
+            title: 'Stroke methods: Dots, Space, Drag Dot, Anchored, Line — when to use each',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/brush/stroke.html',
+            resourceLabel: 'Blender Docs'
+          },
+          {
+            id: 'l2-al-3',
+            title: 'Brush falloff curve: controlling hard vs soft edge behaviour',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/brush/falloff.html',
+            resourceLabel: 'Blender Docs'
           }
         ]
       }
@@ -248,7 +314,7 @@ const CURRICULUM = [
           },
           {
             id: 'l3-fa-4',
-            title: 'Mouth and lips: Cupid\'s bow, philtrum, chin form',
+            title: "Mouth and lips: Cupid's bow, philtrum, chin form",
             resourceUrl: 'https://www.youtube.com/@ZachariasReinhardt',
             resourceLabel: 'Zacharias Reinhardt'
           }
@@ -279,6 +345,30 @@ const CURRICULUM = [
         ]
       },
       {
+        id: 'l3-neck',
+        title: 'Neck, Shoulders & Ear',
+        topics: [
+          {
+            id: 'l3-ne-1',
+            title: 'Neck anatomy: sternocleidomastoid, trapezius, and the cylinder-in-cylinder model',
+            resourceUrl: 'https://www.youtube.com/@ZachariasReinhardt',
+            resourceLabel: 'Zacharias Reinhardt'
+          },
+          {
+            id: 'l3-ne-2',
+            title: 'Shoulder girdle: clavicle, deltoid, and the connection to chest and back',
+            resourceUrl: 'https://www.youtube.com/@ZachariasReinhardt',
+            resourceLabel: 'Zacharias Reinhardt'
+          },
+          {
+            id: 'l3-ne-3',
+            title: 'Ear anatomy study: helix, antihelix, tragus, antitragus, and concha',
+            resourceUrl: 'https://www.youtube.com/@ZachariasReinhardt',
+            resourceLabel: 'Zacharias Reinhardt'
+          }
+        ]
+      },
+      {
         id: 'l3-cloth',
         title: 'Cloth & Fabric',
         topics: [
@@ -299,6 +389,12 @@ const CURRICULUM = [
             title: 'Using cloth physics simulation as a sculpting base mesh',
             resourceUrl: 'https://docs.blender.org/manual/en/latest/physics/cloth/introduction.html',
             resourceLabel: 'Blender Docs'
+          },
+          {
+            id: 'l3-cl-4',
+            title: 'Costume accessories: integrating hard buckles and pouches with soft fabric',
+            resourceUrl: 'https://www.youtube.com/@YanSculpts',
+            resourceLabel: 'YanSculpts'
           }
         ]
       },
@@ -321,6 +417,12 @@ const CURRICULUM = [
           {
             id: 'l3-re-3',
             title: 'Manual retopology: PolyBuild tool and RetopoFlow addon overview',
+            resourceUrl: 'https://www.youtube.com/@blenderguru',
+            resourceLabel: 'Blender Guru'
+          },
+          {
+            id: 'l3-re-4',
+            title: 'UV seam placement strategy to avoid normal map baking artifacts',
             resourceUrl: 'https://www.youtube.com/@blenderguru',
             resourceLabel: 'Blender Guru'
           }
@@ -356,6 +458,12 @@ const CURRICULUM = [
             title: 'Planning pose and expression before committing to final detail',
             resourceUrl: 'https://www.youtube.com/@YanSculpts',
             resourceLabel: 'YanSculpts'
+          },
+          {
+            id: 'l4-pi-4',
+            title: 'Pose brush: live posing without destroying sculpted surface detail',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/pose.html',
+            resourceLabel: 'Blender Docs'
           }
         ]
       },
@@ -428,6 +536,36 @@ const CURRICULUM = [
             title: 'Ambient occlusion, curvature, and thickness map baking',
             resourceUrl: 'https://www.youtube.com/@blenderguru',
             resourceLabel: 'Blender Guru'
+          },
+          {
+            id: 'l4-ba-4',
+            title: 'Exporting to Substance Painter: mesh naming, ID maps, and bake sets',
+            resourceUrl: 'https://www.youtube.com/@blenderguru',
+            resourceLabel: 'Blender Guru'
+          }
+        ]
+      },
+      {
+        id: 'l4-hair',
+        title: 'Hair Sculpting',
+        topics: [
+          {
+            id: 'l4-ha-1',
+            title: 'Hair mass blocking: volume, flow direction, and defining parting lines',
+            resourceUrl: 'https://www.youtube.com/@YanSculpts',
+            resourceLabel: 'YanSculpts'
+          },
+          {
+            id: 'l4-ha-2',
+            title: 'Strand-level detail using Crease, Draw Sharp, and custom hair alphas',
+            resourceUrl: 'https://www.youtube.com/@PonteRyuurui',
+            resourceLabel: 'Ponte Ryuurui'
+          },
+          {
+            id: 'l4-ha-3',
+            title: 'Hairline edges: short hair, stubble, and peach fuzz transitions',
+            resourceUrl: 'https://www.youtube.com/@YanSculpts',
+            resourceLabel: 'YanSculpts'
           }
         ]
       }
@@ -513,6 +651,54 @@ const CURRICULUM = [
         ]
       },
       {
+        id: 'l5-printing',
+        title: 'Sculpting for 3D Printing',
+        topics: [
+          {
+            id: 'l5-pt-1',
+            title: 'Wall thickness, hollow vs solid, and material requirements for FDM and resin',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/addons/mesh/3d_print_toolbox.html',
+            resourceLabel: 'Blender Docs'
+          },
+          {
+            id: 'l5-pt-2',
+            title: 'Support-aware design: overhangs, angles, and support-free geometry strategies',
+            resourceUrl: 'https://www.youtube.com/@PonteRyuurui',
+            resourceLabel: 'Ponte Ryuurui'
+          },
+          {
+            id: 'l5-pt-3',
+            title: 'Mesh repair: non-manifold edges and flipped normals with the 3D Print Toolbox',
+            resourceUrl: 'https://docs.blender.org/manual/en/latest/addons/mesh/3d_print_toolbox.html',
+            resourceLabel: 'Blender Docs'
+          }
+        ]
+      },
+      {
+        id: 'l5-crosssoft',
+        title: 'Cross-Software Pipelines',
+        topics: [
+          {
+            id: 'l5-cs-1',
+            title: 'ZBrush → Blender roundtrip via GoZ and FBX: preserving SubD levels',
+            resourceUrl: 'https://www.youtube.com/@PonteRyuurui',
+            resourceLabel: 'Ponte Ryuurui'
+          },
+          {
+            id: 'l5-cs-2',
+            title: 'Blender → Substance Painter: mesh naming conventions and ID colour maps',
+            resourceUrl: 'https://www.youtube.com/@blenderguru',
+            resourceLabel: 'Blender Guru'
+          },
+          {
+            id: 'l5-cs-3',
+            title: 'Game-ready pipeline: polycount budgets, LOD meshes, and Nanite considerations',
+            resourceUrl: 'https://www.youtube.com/@PonteRyuurui',
+            resourceLabel: 'Ponte Ryuurui'
+          }
+        ]
+      },
+      {
         id: 'l5-portfolio',
         title: 'Portfolio Development',
         topics: [
@@ -563,6 +749,12 @@ const CHALLENGES = [
     description: 'Sculpt three different rock types (angular, smooth water-worn, and fractured cliff face) in one scene. Use photo reference and study how geology dictates surface form.'
   },
   {
+    id: 'ch-11',
+    title: 'Speed Sculpt — 30 Minutes',
+    difficulty: 'beginner',
+    description: 'Set a timer and sculpt anything you like in exactly 30 minutes. The goal is decisiveness — commit to forms, do not second-guess, and keep moving. Repeat weekly to track growth.'
+  },
+  {
     id: 'ch-4',
     title: 'Stylized Cartoon Head',
     difficulty: 'intermediate',
@@ -579,6 +771,18 @@ const CHALLENGES = [
     title: 'Human Hand',
     difficulty: 'intermediate',
     description: 'Sculpt a complete human hand with all five fingers — showing visible knuckle pads, interphalangeal creases, fingernails, and the thenar and hypothenar eminences.'
+  },
+  {
+    id: 'ch-12',
+    title: 'Drape Study',
+    difficulty: 'intermediate',
+    description: 'Sculpt cloth draped over a simple mannequin form — no figure underneath. Focus entirely on fold types: falling, compressed, and pulled. Use real fabric reference.'
+  },
+  {
+    id: 'ch-13',
+    title: 'Animal Head',
+    difficulty: 'intermediate',
+    description: 'Choose any real animal and sculpt its head from reference. Tests whether anatomy principles transfer from human to non-human forms. Check proportions from multiple angles.'
   },
   {
     id: 'ch-7',
@@ -599,40 +803,90 @@ const CHALLENGES = [
     description: 'Sculpt a sci-fi pauldron or chest plate that blends organic curves with crisp hard-surface panel lines. Use masking, Flatten, and Trim brushes to achieve sharp manufactured edges.'
   },
   {
+    id: 'ch-14',
+    title: 'Copy a Master',
+    difficulty: 'advanced',
+    description: 'Recreate a famous sculpture (Bernini, Rodin, Michelangelo, etc.) from photo reference. Pure observational exercise — measure proportions carefully and match surface quality as closely as possible.'
+  },
+  {
+    id: 'ch-15',
+    title: 'Stylized Full Figure',
+    difficulty: 'advanced',
+    description: 'Sculpt a complete stylized character from head to toe, including simple clothing or costume. Requires consistent proportions, readable silhouette, and cohesive design language throughout.'
+  },
+  {
     id: 'ch-10',
     title: 'Complete Character Bust',
     difficulty: 'expert',
     description: 'Sculpt a full character from head to mid-torso with a clear expression, deliberate costume or skin texture, and professional surface quality. Finish with a hero-shot turntable render.'
+  },
+  {
+    id: 'ch-16',
+    title: 'Print-Ready Miniature',
+    difficulty: 'expert',
+    description: 'Sculpt a character or creature intended for FDM or resin printing. Must pass the 3D Print Toolbox checks (wall thickness, manifold geometry, no inverted normals) and be scaled correctly.'
+  },
+  {
+    id: 'ch-17',
+    title: 'Prop / Weapon',
+    difficulty: 'expert',
+    description: 'Sculpt a detailed weapon or prop that combines an organic element (leather grip, bone handle) with hard-surface metal parts. Show material contrast through surface texture variation.'
   }
 ];
 
 /* ============================================================
    Storage
    ============================================================ */
-const STORAGE_KEY = 'blender_sculpt_v1';
+const STORAGE_KEY  = 'blender_sculpt_v1';
+const THEME_KEY    = 'blender_sculpt_theme';
 
 function loadProgress() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return { topics: new Set(), challenges: new Set() };
-    const parsed = JSON.parse(raw);
+    if (!raw) return { topics: new Set(), challenges: new Set(), notes: {}, bookmark: null };
+    const p = JSON.parse(raw);
     return {
-      topics:     new Set(parsed.topics     || []),
-      challenges: new Set(parsed.challenges || [])
+      topics:     new Set(p.topics     || []),
+      challenges: new Set(p.challenges || []),
+      notes:      p.notes    || {},
+      bookmark:   p.bookmark || null
     };
   } catch {
-    return { topics: new Set(), challenges: new Set() };
+    return { topics: new Set(), challenges: new Set(), notes: {}, bookmark: null };
   }
 }
 
 function saveProgress() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify({
     topics:     [...progress.topics],
-    challenges: [...progress.challenges]
+    challenges: [...progress.challenges],
+    notes:      progress.notes,
+    bookmark:   progress.bookmark
   }));
 }
 
 let progress = loadProgress();
+
+/* ============================================================
+   Theme
+   ============================================================ */
+function loadTheme() {
+  return localStorage.getItem(THEME_KEY) || 'dark';
+}
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const btn = document.getElementById('theme-btn');
+  if (!btn) return;
+  btn.textContent = theme === 'dark' ? '☀' : '☾';
+  btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+}
+
+function toggleTheme() {
+  const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem(THEME_KEY, next);
+  applyTheme(next);
+}
 
 /* ============================================================
    Helpers
@@ -645,41 +899,49 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+function escapeHtml(str) {
+  return (str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 /* ============================================================
    Progress Bars
    ============================================================ */
 function updateProgressBars() {
-  const topics       = allTopics();
-  const totalTopics  = topics.length;
-  const doneTopics   = topics.filter(t => progress.topics.has(t.id)).length;
-  const topicPct     = totalTopics > 0 ? Math.round((doneTopics / totalTopics) * 100) : 0;
+  const topics      = allTopics();
+  const totalTopics = topics.length;
+  const doneTopics  = topics.filter(t => progress.topics.has(t.id)).length;
+  const topicPct    = totalTopics > 0 ? Math.round((doneTopics / totalTopics) * 100) : 0;
 
   const totalChallenges = CHALLENGES.length;
   const doneChallenges  = CHALLENGES.filter(c => progress.challenges.has(c.id)).length;
   const challengePct    = totalChallenges > 0 ? Math.round((doneChallenges / totalChallenges) * 100) : 0;
 
-  const learningBar   = document.getElementById('learning-bar');
-  const challengesBar = document.getElementById('challenges-bar');
-  const learningTrack   = learningBar.closest('.progress-track');
-  const challengesTrack = challengesBar.closest('.progress-track');
+  const learningBar     = document.getElementById('learning-bar');
+  const challengesBar   = document.getElementById('challenges-bar');
 
-  learningBar.style.width  = topicPct + '%';
+  learningBar.style.width   = topicPct + '%';
   challengesBar.style.width = challengePct + '%';
 
-  document.getElementById('learning-pct').textContent   = topicPct + '%';
-  document.getElementById('challenges-pct').textContent = challengePct + '%';
+  document.getElementById('learning-pct').textContent     = topicPct + '%';
+  document.getElementById('challenges-pct').textContent   = challengePct + '%';
   document.getElementById('learning-count').textContent   = `${doneTopics} / ${totalTopics} topics`;
   document.getElementById('challenges-count').textContent = `${doneChallenges} / ${totalChallenges} completed`;
 
-  learningTrack.setAttribute('aria-valuenow', topicPct);
-  challengesTrack.setAttribute('aria-valuenow', challengePct);
+  learningBar.closest('.progress-track').setAttribute('aria-valuenow', topicPct);
+  challengesBar.closest('.progress-track').setAttribute('aria-valuenow', challengePct);
 }
 
 /* ============================================================
-   Render Curriculum
+   Curriculum Rendering
    ============================================================ */
 function renderTopic(topic) {
-  const done = progress.topics.has(topic.id);
+  const done        = progress.topics.has(topic.id);
+  const isBookmark  = progress.bookmark === topic.id;
+
   const li = document.createElement('li');
   li.className = 'topic-row' + (done ? ' done' : '');
 
@@ -689,18 +951,27 @@ function renderTopic(topic) {
       <span class="checkmark" aria-hidden="true"></span>
       <span class="topic-title">${topic.title}</span>
     </label>
-    <a class="resource-link" href="${topic.resourceUrl}" target="_blank" rel="noopener noreferrer"
-       title="Open: ${topic.resourceLabel}">${topic.resourceLabel}&nbsp;→</a>
+    <div class="topic-actions">
+      <button class="bookmark-btn${isBookmark ? ' active' : ''}" data-topic-id="${topic.id}"
+              title="${isBookmark ? 'Clear focus' : 'Set as current focus'}" aria-label="Bookmark this topic">
+        ${isBookmark ? '★' : '☆'}
+      </button>
+      <a class="resource-link" href="${topic.resourceUrl}" target="_blank" rel="noopener noreferrer"
+         title="Open: ${topic.resourceLabel}">${topic.resourceLabel}&nbsp;→</a>
+    </div>
   `;
 
   li.querySelector('.topic-checkbox').addEventListener('change', e => {
-    const id = e.target.dataset.id;
-    if (e.target.checked) progress.topics.add(id);
-    else                   progress.topics.delete(id);
+    if (e.target.checked) progress.topics.add(topic.id);
+    else                   progress.topics.delete(topic.id);
     saveProgress();
     li.classList.toggle('done', e.target.checked);
     updateProgressBars();
     refreshLevelHeader(topic._levelId);
+  });
+
+  li.querySelector('.bookmark-btn').addEventListener('click', () => {
+    setBookmark(topic.id);
   });
 
   return li;
@@ -717,20 +988,18 @@ function renderModule(mod, levelId) {
 
   const ul = document.createElement('ul');
   ul.className = 'topic-list';
-
   mod.topics.forEach(topic => {
     topic._levelId = levelId;
     ul.appendChild(renderTopic(topic));
   });
-
   div.appendChild(ul);
   return div;
 }
 
 function buildLevelDoneCount(level) {
-  const topics  = level.modules.flatMap(m => m.topics);
-  const total   = topics.length;
-  const done    = topics.filter(t => progress.topics.has(t.id)).length;
+  const topics = level.modules.flatMap(m => m.topics);
+  const total  = topics.length;
+  const done   = topics.filter(t => progress.topics.has(t.id)).length;
   return { done, total };
 }
 
@@ -738,14 +1007,18 @@ function refreshLevelHeader(levelId) {
   const level = CURRICULUM.find(l => l.id === levelId);
   if (!level) return;
 
-  const block      = document.querySelector(`.level-block[data-level-id="${levelId}"]`);
-  const countEl    = block.querySelector('.level-progress-text');
-  const badgeEl    = block.querySelector('.level-complete-badge');
+  const block    = document.querySelector(`.level-block[data-level-id="${levelId}"]`);
+  if (!block) return;
+  const countEl  = block.querySelector('.level-progress-text');
+  const badgeEl  = block.querySelector('.level-complete-badge');
+  const miniBar  = block.querySelector('.level-mini-fill');
   const { done, total } = buildLevelDoneCount(level);
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
 
   countEl.textContent = `${done} / ${total}`;
+  if (miniBar) miniBar.style.width = pct + '%';
 
-  if (done === total) {
+  if (done === total && total > 0) {
     block.classList.add('level-done');
     if (!badgeEl) {
       const badge = document.createElement('span');
@@ -765,14 +1038,14 @@ function renderCurriculum() {
 
   CURRICULUM.forEach((level, idx) => {
     const { done, total } = buildLevelDoneCount(level);
-    const isComplete      = done === total && total > 0;
-    // Level 1 open by default, rest collapsed
-    const expanded        = idx === 0;
+    const isComplete = done === total && total > 0;
+    const expanded   = idx === 0;
+    const pct        = total > 0 ? Math.round((done / total) * 100) : 0;
 
     const block = document.createElement('div');
-    block.className = 'level-block' + (isComplete ? ' level-done' : '');
-    block.dataset.level    = level.level;
-    block.dataset.levelId  = level.id;
+    block.className      = 'level-block' + (isComplete ? ' level-done' : '');
+    block.dataset.level   = level.level;
+    block.dataset.levelId = level.id;
 
     block.innerHTML = `
       <button class="level-header" aria-expanded="${expanded}" data-level-id="${level.id}">
@@ -784,6 +1057,9 @@ function renderCurriculum() {
           </div>
         </div>
         <div class="level-header-right">
+          <div class="level-mini-bar" title="${pct}% complete">
+            <div class="level-mini-fill" style="width:${pct}%"></div>
+          </div>
           <span class="level-progress-text">${done} / ${total}</span>
           ${isComplete ? '<span class="level-complete-badge">✓ Complete</span>' : ''}
           <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -797,12 +1073,12 @@ function renderCurriculum() {
     const contentEl = block.querySelector('.level-content');
     level.modules.forEach(mod => contentEl.appendChild(renderModule(mod, level.id)));
 
-    // Collapse toggle
     block.querySelector('.level-header').addEventListener('click', () => {
-      const btn = block.querySelector('.level-header');
+      const btn    = block.querySelector('.level-header');
       const isOpen = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!isOpen));
       contentEl.classList.toggle('collapsed', isOpen);
+      updateExpandAllBtn();
     });
 
     container.appendChild(block);
@@ -810,56 +1086,14 @@ function renderCurriculum() {
 }
 
 /* ============================================================
-   Render Challenges
+   Challenges Rendering
    ============================================================ */
-function renderChallenges() {
-  const container = document.getElementById('challenges-container');
-  container.innerHTML = '';
-
-  CHALLENGES.forEach(challenge => {
-    const done = progress.challenges.has(challenge.id);
-
-    const card = document.createElement('div');
-    card.className = 'challenge-card' + (done ? ' done' : '');
-    card.dataset.difficulty = challenge.difficulty;
-
-    card.innerHTML = `
-      <div class="challenge-stripe" aria-hidden="true"></div>
-      <div class="challenge-body">
-        <div class="challenge-header">
-          <span class="difficulty-badge">${capitalize(challenge.difficulty)}</span>
-          ${done ? '<span class="done-badge">✓ Complete</span>' : ''}
-        </div>
-        <h3 class="challenge-title">${challenge.title}</h3>
-        <p class="challenge-desc">${challenge.description}</p>
-        <button class="challenge-toggle" data-id="${challenge.id}">
-          ${done ? 'Mark Incomplete' : 'Mark Complete'}
-        </button>
-      </div>
-    `;
-
-    card.querySelector('.challenge-toggle').addEventListener('click', () => {
-      if (progress.challenges.has(challenge.id)) {
-        progress.challenges.delete(challenge.id);
-      } else {
-        progress.challenges.add(challenge.id);
-      }
-      saveProgress();
-      // Re-render just this card by replacing it in-place
-      const updated = renderSingleChallenge(challenge);
-      card.replaceWith(updated);
-      updateProgressBars();
-    });
-
-    container.appendChild(card);
-  });
-}
-
-function renderSingleChallenge(challenge) {
-  const done = progress.challenges.has(challenge.id);
+function buildChallengeCard(challenge) {
+  const done  = progress.challenges.has(challenge.id);
+  const notes = escapeHtml(progress.notes[challenge.id] || '');
 
   const card = document.createElement('div');
-  card.className = 'challenge-card' + (done ? ' done' : '');
+  card.className        = 'challenge-card' + (done ? ' done' : '');
   card.dataset.difficulty = challenge.difficulty;
 
   card.innerHTML = `
@@ -871,20 +1105,23 @@ function renderSingleChallenge(challenge) {
       </div>
       <h3 class="challenge-title">${challenge.title}</h3>
       <p class="challenge-desc">${challenge.description}</p>
+      <textarea class="challenge-notes" placeholder="Notes, WIP link, completion date…" rows="2">${notes}</textarea>
       <button class="challenge-toggle" data-id="${challenge.id}">
         ${done ? 'Mark Incomplete' : 'Mark Complete'}
       </button>
     </div>
   `;
 
-  card.querySelector('.challenge-toggle').addEventListener('click', () => {
-    if (progress.challenges.has(challenge.id)) {
-      progress.challenges.delete(challenge.id);
-    } else {
-      progress.challenges.add(challenge.id);
-    }
+  card.querySelector('.challenge-notes').addEventListener('input', e => {
+    progress.notes[challenge.id] = e.target.value;
     saveProgress();
-    const updated = renderSingleChallenge(challenge);
+  });
+
+  card.querySelector('.challenge-toggle').addEventListener('click', () => {
+    if (progress.challenges.has(challenge.id)) progress.challenges.delete(challenge.id);
+    else                                        progress.challenges.add(challenge.id);
+    saveProgress();
+    const updated = buildChallengeCard(challenge);
     card.replaceWith(updated);
     updateProgressBars();
   });
@@ -892,26 +1129,191 @@ function renderSingleChallenge(challenge) {
   return card;
 }
 
+function renderChallenges() {
+  const container = document.getElementById('challenges-container');
+  container.innerHTML = '';
+  CHALLENGES.forEach(c => container.appendChild(buildChallengeCard(c)));
+  applyDifficultyFilter();
+}
+
 /* ============================================================
-   Reset
+   Feature: Expand / Collapse All
    ============================================================ */
-function initReset() {
-  document.getElementById('reset-btn').addEventListener('click', () => {
-    if (!confirm('Reset all progress? This cannot be undone.')) return;
-    progress = { topics: new Set(), challenges: new Set() };
-    saveProgress();
-    renderCurriculum();
-    renderChallenges();
-    updateProgressBars();
+function updateExpandAllBtn() {
+  const btn      = document.getElementById('expand-all-btn');
+  if (!btn) return;
+  const headers  = document.querySelectorAll('.level-header');
+  const anyOpen  = [...headers].some(h => h.getAttribute('aria-expanded') === 'true');
+  btn.textContent = anyOpen ? 'Collapse All' : 'Expand All';
+}
+
+function initExpandAll() {
+  const btn = document.getElementById('expand-all-btn');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const headers     = document.querySelectorAll('.level-header');
+    const anyCollapsed = [...headers].some(h => h.getAttribute('aria-expanded') === 'false');
+    headers.forEach(h => {
+      h.setAttribute('aria-expanded', anyCollapsed ? 'true' : 'false');
+      const content = document.getElementById(`content-${h.dataset.levelId}`);
+      if (content) content.classList.toggle('collapsed', !anyCollapsed);
+    });
+    btn.textContent = anyCollapsed ? 'Collapse All' : 'Expand All';
   });
+  updateExpandAllBtn();
+}
+
+/* ============================================================
+   Feature: Difficulty Filter
+   ============================================================ */
+let activeFilters = new Set(['beginner', 'intermediate', 'advanced', 'expert']);
+
+function applyDifficultyFilter() {
+  document.querySelectorAll('.challenge-card').forEach(card => {
+    card.hidden = !activeFilters.has(card.dataset.difficulty);
+  });
+}
+
+function initDifficultyFilter() {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const f = btn.dataset.filter;
+      if (activeFilters.has(f)) {
+        if (activeFilters.size === 1) return;
+        activeFilters.delete(f);
+        btn.classList.remove('active');
+      } else {
+        activeFilters.add(f);
+        btn.classList.add('active');
+      }
+      applyDifficultyFilter();
+    });
+  });
+}
+
+/* ============================================================
+   Feature: Bookmark / Current Focus
+   ============================================================ */
+function updateFocusChip() {
+  const chip     = document.getElementById('focus-chip');
+  const chipText = document.getElementById('focus-chip-text');
+
+  if (!progress.bookmark) {
+    chip.hidden = true;
+    return;
+  }
+  const topic = allTopics().find(t => t.id === progress.bookmark);
+  if (!topic) {
+    progress.bookmark = null;
+    saveProgress();
+    chip.hidden = true;
+    return;
+  }
+  chipText.textContent = topic.title;
+  chip.hidden = false;
+
+  document.querySelectorAll('.bookmark-btn').forEach(btn => {
+    const active = btn.dataset.topicId === progress.bookmark;
+    btn.classList.toggle('active', active);
+    btn.textContent = active ? '★' : '☆';
+    btn.title = active ? 'Clear focus' : 'Set as current focus';
+  });
+}
+
+function setBookmark(topicId) {
+  progress.bookmark = progress.bookmark === topicId ? null : topicId;
+  saveProgress();
+  updateFocusChip();
+}
+
+/* ============================================================
+   Feature: Export / Import
+   ============================================================ */
+function exportProgress() {
+  const data = JSON.stringify({
+    topics:     [...progress.topics],
+    challenges: [...progress.challenges],
+    notes:      progress.notes,
+    bookmark:   progress.bookmark
+  }, null, 2);
+  const blob = new Blob([data], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = 'blender-sculpt-progress.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function importProgress(file) {
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const data = JSON.parse(e.target.result);
+      progress = {
+        topics:     new Set(data.topics     || []),
+        challenges: new Set(data.challenges || []),
+        notes:      data.notes    || {},
+        bookmark:   data.bookmark || null
+      };
+      saveProgress();
+      renderCurriculum();
+      renderChallenges();
+      updateProgressBars();
+      updateFocusChip();
+      initExpandAll();
+    } catch {
+      alert('Import failed: invalid file format.');
+    }
+  };
+  reader.readAsText(file);
 }
 
 /* ============================================================
    Init
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
+  applyTheme(loadTheme());
+
   renderCurriculum();
   renderChallenges();
   updateProgressBars();
-  initReset();
+  updateFocusChip();
+
+  initExpandAll();
+  initDifficultyFilter();
+
+  document.getElementById('theme-btn').addEventListener('click', toggleTheme);
+
+  document.getElementById('focus-chip-clear').addEventListener('click', () => {
+    progress.bookmark = null;
+    saveProgress();
+    updateFocusChip();
+    document.querySelectorAll('.bookmark-btn').forEach(btn => {
+      btn.classList.remove('active');
+      btn.textContent = '☆';
+      btn.title = 'Set as current focus';
+    });
+  });
+
+  document.getElementById('export-btn').addEventListener('click', exportProgress);
+
+  document.getElementById('import-input').addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (file) importProgress(file);
+    e.target.value = '';
+  });
+
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    if (!confirm('Reset all progress? This cannot be undone.')) return;
+    progress = { topics: new Set(), challenges: new Set(), notes: {}, bookmark: null };
+    saveProgress();
+    renderCurriculum();
+    renderChallenges();
+    updateProgressBars();
+    updateFocusChip();
+    initExpandAll();
+  });
 });

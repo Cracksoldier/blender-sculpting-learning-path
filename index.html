@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,45 +19,70 @@
         </div>
       </div>
 
-      <div class="progress-bars">
-        <div class="progress-group">
-          <div class="progress-label">
-            <span>Learning Progress</span>
-            <span id="learning-pct" class="pct-value">0%</span>
+      <div class="header-center">
+        <div class="progress-bars">
+          <div class="progress-group">
+            <div class="progress-label">
+              <span>Learning Progress</span>
+              <span id="learning-pct" class="pct-value">0%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Learning progress">
+              <div class="progress-fill" id="learning-bar"></div>
+            </div>
+            <div class="progress-count" id="learning-count">0 / 0 topics</div>
           </div>
-          <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Learning progress">
-            <div class="progress-fill" id="learning-bar"></div>
+
+          <div class="progress-group">
+            <div class="progress-label">
+              <span>Challenges</span>
+              <span id="challenges-pct" class="pct-value">0%</span>
+            </div>
+            <div class="progress-track challenges-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Challenges progress">
+              <div class="progress-fill challenges-fill" id="challenges-bar"></div>
+            </div>
+            <div class="progress-count" id="challenges-count">0 / 17 completed</div>
           </div>
-          <div class="progress-count" id="learning-count">0 / 0 topics</div>
         </div>
 
-        <div class="progress-group">
-          <div class="progress-label">
-            <span>Challenges</span>
-            <span id="challenges-pct" class="pct-value">0%</span>
-          </div>
-          <div class="progress-track challenges-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Challenges progress">
-            <div class="progress-fill challenges-fill" id="challenges-bar"></div>
-          </div>
-          <div class="progress-count" id="challenges-count">0 / 10 completed</div>
+        <div id="focus-chip" class="focus-chip" hidden>
+          <span class="focus-chip-label">Studying:</span>
+          <span id="focus-chip-text"></span>
+          <button id="focus-chip-clear" aria-label="Clear focus">✕</button>
         </div>
       </div>
+
+      <button id="theme-btn" class="theme-btn" aria-label="Switch to light mode">☀</button>
     </div>
   </header>
 
   <main>
     <section id="curriculum" class="content-section">
       <div class="section-header">
-        <h2 class="section-title">Curriculum</h2>
-        <p class="section-desc">Work through each level in order. Check off topics as you complete them — your progress is saved automatically.</p>
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title">Curriculum</h2>
+            <p class="section-desc">Work through each level in order. Check off topics as you complete them — your progress is saved automatically.</p>
+          </div>
+          <button id="expand-all-btn" class="expand-all-btn">Expand All</button>
+        </div>
       </div>
       <div id="levels-container"></div>
     </section>
 
     <section id="challenges" class="content-section">
       <div class="section-header">
-        <h2 class="section-title">Challenges</h2>
-        <p class="section-desc">Practical projects that test your skills at every stage. Complete them to reinforce what you've learned.</p>
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title">Challenges</h2>
+            <p class="section-desc">Practical projects to test your skills. Add notes to track your work-in-progress links and completion dates.</p>
+          </div>
+          <div id="difficulty-filters" class="difficulty-filters" role="group" aria-label="Filter by difficulty">
+            <button class="filter-btn active" data-filter="beginner">Beginner</button>
+            <button class="filter-btn active" data-filter="intermediate">Intermediate</button>
+            <button class="filter-btn active" data-filter="advanced">Advanced</button>
+            <button class="filter-btn active" data-filter="expert">Expert</button>
+          </div>
+        </div>
       </div>
       <div id="challenges-container" class="challenges-grid"></div>
     </section>
@@ -65,7 +90,14 @@
 
   <footer class="site-footer">
     <p class="footer-credit">Resources link to Blender Docs, YanSculpts, Zacharias Reinhardt, Blender Guru &amp; Ponte Ryuurui.</p>
-    <button id="reset-btn" class="reset-btn" aria-label="Reset all progress">Reset Progress</button>
+    <div class="footer-actions">
+      <button id="export-btn" class="footer-btn">Export Progress</button>
+      <label class="footer-btn import-label">
+        Import Progress
+        <input type="file" id="import-input" accept=".json">
+      </label>
+      <button id="reset-btn" class="reset-btn" aria-label="Reset all progress">Reset</button>
+    </div>
   </footer>
 
   <script src="app.js"></script>

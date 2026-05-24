@@ -98,7 +98,15 @@ img    { display: block; }
   padding: 14px 28px;
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 24px;
+}
+
+.header-center {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .header-brand {
@@ -130,7 +138,6 @@ img    { display: block; }
 .progress-bars {
   display: flex;
   gap: 28px;
-  flex: 1;
   min-width: 0;
 }
 
@@ -494,6 +501,27 @@ main {
   text-decoration-color: var(--text-muted);
 }
 
+.topic-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
+.bookmark-btn {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  padding: 1px 3px;
+  border-radius: 3px;
+  line-height: 1;
+  transition: color var(--t-fast), background var(--t-fast);
+  flex-shrink: 0;
+}
+.bookmark-btn:hover  { color: var(--violet); background: rgba(167,139,250,0.1); }
+.bookmark-btn.active { color: var(--violet); }
+
 .resource-link {
   font-size: 0.65rem;
   font-weight: 500;
@@ -504,8 +532,6 @@ main {
   border-radius: 4px;
   transition: color var(--t-fast), border-color var(--t-fast), background var(--t-fast);
   flex-shrink: 0;
-  align-self: flex-start;
-  margin-top: 2px;
 }
 
 .resource-link:hover {
@@ -685,15 +711,19 @@ main {
    ============================================================ */
 @media (max-width: 860px) {
   .header-inner {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 16px;
-    padding: 14px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 20px;
   }
 
-  .progress-bars {
-    gap: 16px;
+  .header-center {
+    order: 3;
+    flex-basis: 100%;
   }
+
+  .theme-btn { order: 2; }
+
+  .progress-bars { gap: 16px; }
 }
 
 @media (max-width: 640px) {
@@ -736,4 +766,206 @@ main {
   .header-inner { padding: 12px 14px; }
   .header-brand { gap: 10px; }
   .header-logo  { width: 30px; height: 30px; }
+}
+
+/* ============================================================
+   Theme Toggle Button
+   ============================================================ */
+.theme-btn {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  padding: 6px 9px;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  transition: all var(--t-fast);
+  flex-shrink: 0;
+  line-height: 1;
+}
+.theme-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+  background: var(--bg-card);
+}
+
+/* ============================================================
+   Focus Chip (Current Bookmark)
+   ============================================================ */
+.focus-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(167,139,250,0.1);
+  border: 1px solid rgba(167,139,250,0.25);
+  border-radius: 99px;
+  font-size: 0.7rem;
+  color: var(--violet);
+  max-width: 100%;
+  overflow: hidden;
+}
+.focus-chip[hidden] { display: none; }
+.focus-chip-label   { font-weight: 600; flex-shrink: 0; }
+#focus-chip-text    { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#focus-chip-clear   { font-size: 0.65rem; color: var(--text-muted); padding: 0 2px; opacity: 0.6; flex-shrink: 0; }
+#focus-chip-clear:hover { opacity: 1; }
+
+/* ============================================================
+   Section Header Row (title + action button side by side)
+   ============================================================ */
+.section-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+   Expand / Collapse All Button
+   ============================================================ */
+.expand-all-btn {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  transition: all var(--t-fast);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.expand-all-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+  background: var(--bg-card);
+}
+
+/* ============================================================
+   Difficulty Filter Buttons
+   ============================================================ */
+.difficulty-filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 4px;
+}
+.filter-btn {
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--border-medium);
+  color: var(--text-muted);
+  background: transparent;
+  cursor: pointer;
+  transition: all var(--t-fast);
+}
+.filter-btn.active[data-filter="beginner"]     { background: var(--lvl-1-dim); border-color: var(--lvl-1); color: var(--lvl-1); }
+.filter-btn.active[data-filter="intermediate"] { background: var(--lvl-3-dim); border-color: var(--lvl-3); color: var(--lvl-3); }
+.filter-btn.active[data-filter="advanced"]     { background: var(--lvl-4-dim); border-color: var(--lvl-4); color: var(--lvl-4); }
+.filter-btn.active[data-filter="expert"]       { background: var(--lvl-5-dim); border-color: var(--lvl-5); color: var(--lvl-5); }
+
+/* ============================================================
+   Per-level Mini Progress Bar
+   ============================================================ */
+.level-mini-bar {
+  width: 56px;
+  height: 4px;
+  background: var(--bg-hover);
+  border-radius: 99px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.level-mini-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 99px;
+  transition: width var(--t-slow);
+}
+.level-block[data-level="1"] .level-mini-fill { background: var(--lvl-1); }
+.level-block[data-level="2"] .level-mini-fill { background: var(--lvl-2); }
+.level-block[data-level="3"] .level-mini-fill { background: var(--lvl-3); }
+.level-block[data-level="4"] .level-mini-fill { background: var(--lvl-4); }
+.level-block[data-level="5"] .level-mini-fill { background: var(--lvl-5); }
+
+/* ============================================================
+   Challenge Notes Textarea
+   ============================================================ */
+.challenge-notes {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-family: var(--font);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  padding: 7px 10px;
+  resize: vertical;
+  min-height: 50px;
+  transition: border-color var(--t-fast), color var(--t-fast);
+  margin-top: 4px;
+}
+.challenge-notes:focus {
+  outline: none;
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+.challenge-notes::placeholder { color: var(--text-muted); font-style: italic; }
+
+/* ============================================================
+   Footer Actions (Export / Import / Reset)
+   ============================================================ */
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.footer-btn {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 7px 14px;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  transition: all var(--t-fast);
+  cursor: pointer;
+  background: transparent;
+  font-family: var(--font);
+}
+.footer-btn:hover {
+  color: var(--text-secondary);
+  border-color: var(--border-strong);
+  background: var(--bg-card);
+}
+.import-label { cursor: pointer; }
+.import-label input { display: none; }
+
+/* ============================================================
+   Light Mode
+   ============================================================ */
+[data-theme="light"] {
+  --bg-base:    #f6f8fa;
+  --bg-surface: #ffffff;
+  --bg-card:    #eef0f3;
+  --bg-hover:   #e0e4ea;
+
+  --border:        rgba(0,0,0,0.07);
+  --border-medium: rgba(0,0,0,0.13);
+  --border-strong: rgba(0,0,0,0.22);
+
+  --text-primary:   #1c2128;
+  --text-secondary: #57606a;
+  --text-muted:     #9198a1;
+}
+
+[data-theme="light"] .site-header {
+  background: rgba(246,248,250,0.92);
+}
+
+[data-theme="light"] .challenge-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
